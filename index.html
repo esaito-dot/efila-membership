@@ -2197,7 +2197,7 @@ var GLOSSARY_SECTION_IDX = -1; GLOSSARY_TERM_NAMES = [];
 <!-- ========== Password Gate Script ========== -->
 <script>
 (function(){
-  var HASH = 'bceb96fef30991e65122c975a161823d153fc53fb395a9fae0196b2c74c06536';
+  var HASH = '8b31c9a45b795ff4e9c029aaa67444f02c3b6310c16298f300efc700ab80760f';
   async function sha256(str){
     var buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
     return Array.from(new Uint8Array(buf)).map(function(b){return b.toString(16).padStart(2,'0')}).join('');
